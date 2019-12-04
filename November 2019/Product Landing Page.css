@@ -1,0 +1,172 @@
+	<!-- CSS Styling -->
+		html {
+			box-sizing: border-box;
+			}
+		*, *:before, *:after {
+			box-sizing: inherit;
+			}
+		body{
+			font-family: 'Poppins', sans-serif; 
+		}
+/* NAVBAR */
+	/* CSS for full navbar */		
+		/* tablet or smaller */
+		#nav-bar{
+			position: fixed;
+			background: white;	
+			top:0;
+			left:0;
+			right:0;	
+			width: 100%;
+			height: 8%;
+			display:flex;
+			align-items: center;
+			flex-direction: column;
+		}
+		/* desktop */
+		@media only screen and (min-width: 768px) {
+			#nav-bar{
+			flex-direction: row;
+			}
+		} 
+
+		/* sets the size of the logo */
+		#header-img{			
+			width: 300px;
+			height: 34px;		
+		}
+		#pagelinks{
+			text-align: center;	
+			width: 100%;
+			height: 100%;
+			font-size: 16px;
+			margin-right: 1em;
+			padding-top: 1%;
+			background-color: white;			
+		}
+		/* desktop */
+		@media only screen and (min-width: 768px){
+				#pagelinks{
+				text-align: end;					
+			}
+		}
+		/* sets the appearance of page-links in the nav bar */
+		.nav-link{
+			text-decoration: none;
+			margin-left: 10%;	
+			color: black;					
+		}
+
+
+
+/* EMAIL FORM */
+		#form-group{
+			padding-top: 5em;
+			max-width: 800px;
+			width: 70%;	
+			margin: auto;	
+			text-align: center;
+		}
+		#form-group h2{
+			margin-bottom: 0;
+		}
+		#email{
+			margin: 1.5em 0 1em 0;
+			width: 300px;
+			height: 2em;
+		}
+		#submit{
+			height: 2em;
+			width: 250px;
+			background-color: orange;
+			margin-bottom: 1em;
+			font-size: 16px;
+		}
+/* PRODUCT DESCRIPTIONS */
+		/* Sets up the box for product descriptions */
+		#product-group{
+			margin: auto;
+			max-width: 800px;
+			width: 70%;	
+		}
+		/* aligns the items within the product group */
+		.products{
+			display: flex;	
+			margin: 2em;			
+		}		
+		/* css for product icons */
+		.icons{
+			font-size: 4em;
+			color: #0abab5;
+			margin-right: 0.5em;
+		}
+		/* aligns the text content of product descriptions */
+		.product-description{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;		
+		}
+		/* prevents there being additional gap between the text */
+		.product-description h3, .product-description p{
+			margin: 0;
+			padding-left: 1em;
+		}
+/* VIDEO */
+		#video-group{
+			margin: auto;
+			text-align: center;
+			margin-top: 3em;
+						
+		}
+		
+/* PRICING */
+
+		/* tablets or smaller */		
+			#pricing-group{
+				display: flex;
+				flex-direction: column;
+				align-items: center;			
+			}
+		
+		/* desktop */
+		@media only screen and (min-width: 768px) {
+			#pricing-group {
+				
+				flex-direction: row;
+				justify-content: center;
+				
+			}
+		}
+		.price-box{
+			width: 300px;
+			border: 1px solid black;
+			text-align: center;
+			margin: 3em 1em 0em 1em;
+		}
+		.price-name{
+			background-color:  #E8EAEA;	
+			padding: 1em 0;
+		}
+		.price{
+			font-size: 1.5em;
+			margin: 0.5em 0;
+		}
+		.price-text{
+			line-height: 2;
+			margin-bottom: 1em;
+		}
+		.price-button{
+			border: 1px solid black;
+			background-color: orange;
+			padding: 0.5em 1em;
+			margin-bottom: 1em;
+		}
+
+/* FOOTER */
+		#footer{
+			width: 100%;
+			padding-top: 4em;
+			margin-top: 3em;
+			background-color: #E8EAEA;
+			text-align: end;
+		}
