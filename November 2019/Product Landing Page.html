@@ -1,0 +1,126 @@
+
+<!-- This is for the following project: 
+	https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+
+
+	<!-- Font Awesome Icons -->
+	<script src="https://kit.fontawesome.com/cd2344d5b8.js" crossorigin="anonymous"></script>
+	<title>Build a Product Landing Page</title>
+
+</head>
+
+
+<body>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- NAV -->
+	<div id="header-group">
+		<header id="header">
+			<nav id="nav-bar">
+				<img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png">
+				<div id="pagelinks"> 
+					<a class="nav-link" href="#product-group">Features</a>
+					<a class="nav-link" href="#video-group">How it Works</a>
+					<a class="nav-link" href="#pricing-group">Pricing</a>
+				</div>
+			</nav>
+		</header>
+	</div>
+
+<!-- EMAIL FORM -->
+	<div id="form-group">
+		<form id="form" action="https://www.freecodecamp.com/email-submit" method="post" target="_blank">
+			<h2>Handcrafted, home-made masterpieces</h2>
+			<div><label for="email"><input id="email" type="email" name="email" placeholder="Enter your email address" required></label></div>
+			<div><label for="submit"><input id="submit" type="submit"></input></label></div>
+		</form>
+	</div>
+
+<!-- PRODUCT DESCRIPTION -->
+	<div id="product-group">
+		<div class="products">
+			<div class="icons"><i class="fas fa-cut fa-fw"></i></div>
+			<div class="product-description">
+				<h3>Premium Materials</h3>
+				<p>Our trombones use the shiniest brass which is sourced locally. This will increase the 
+					longevity of your purchase.</p>
+			</div>
+		</div>
+		<div class="products">
+			<div class="icons"><i class="fas fa-truck fa-fw"></i></div>
+			<div class="product-description">
+				<h3>Fast Shipping</h3>
+				<p>We make sure you recieve your trombone as soon as we have finished making it. 
+					We also provide free returns if you are not satisfied.</p>
+			</div>
+		</div>
+		<div class="products">
+			<div class="icons"><i class="fas fa-phone-alt fa-fw"></i></div>
+			<div class="product-description">
+				<h3>Quality Assurance</h3>
+				<p>For every purchase you make, we will ensure there are no damages or faults and we 
+					will check and test the pitch of your instrument.</p>
+			</div>			
+		</div>
+	</div>
+
+
+<!-- VIDEO -->
+
+	<div id="video-group">
+			<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	
+<!-- 
+
+checkout the view window to see if you can get them to switch to a stack at a certain window size -->
+<!-- PRICING -->
+	<div id="pricing-group">
+		<div class="price-box">
+			<div class="price-name"><strong>TENOR TROMBONE</strong></div>
+			<div class="price"><strong>$600</strong></div>
+			<div class="price-text">
+				Lorem ipsum.<br>
+				Lorem ipsum.<br>
+				Lorem ipsum dolor.<br>
+				Lorem ipsum.<br>
+			</div>
+			<label for="price-select"><button id="price-select" class="price-button">SELECT</button></label>				
+		</div>
+		<div class="price-box">
+			<div class="price-name"><strong>BASS TROMBONE</strong></div>
+			<div class="price"><strong>$900</strong></div>
+			<div class="price-text">
+				Lorem ipsum.<br>
+				Lorem ipsum.<br>
+				Lorem ipsum dolor.<br>
+				Lorem ipsum.<br>
+			</div>
+			<label for="price-select"><button id="price-select" class="price-button">SELECT</button></label>				
+		</div>
+		<div class="price-box">
+			<div class="price-name"><strong>VALVE TROMBONE</strong></div>
+			<div class="price"><strong>$1200</strong></div>
+			<div class="price-text">
+				Lorem ipsum.<br>
+				Lorem ipsum.<br>
+				Lorem ipsum dolor.<br>
+				Lorem ipsum.<br>
+			</div>
+			<label for="price-select"><button id="price-select" class="price-button">SELECT</button></label>				
+		</div>
+	</div>
+
+<!-- Footer -->
+<div id="footer"><footer>Copyright 2019, Original Trombones </footer></div>
+
+</body>
+</html>
