@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+    TO DO:
+        1. Test gradient in nav bar (does it look good?)    
+        2. Write an "about this page section" discussing the source of the theme, Zoe Cyberpop
+        3. check modifying rate of change in gradient
+        9. Positioning of stars on grid changes (misspositioned upon the changes)
+        10. Nice-to-Have: Needs JS but continue animation of project post hover
+        
+-->
+<html>
+<head>
+       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="PersonalPortfolioCSS.css">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
+    <!-- font-family: 'Poppins', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <!-- font-family: 'Alfa Slab One', cursive; -->
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <!-- font-family: 'Ultra', serif; -->
+    <link href="https://fonts.googleapis.com/css?family=Ultra&display=swap" rel="stylesheet">
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/cd2344d5b8.js" crossorigin="anonymous"></script>
+
+    <title>Personal Portfolio</title>
+    
+</head>
+
+<body>
+   
+
+<!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="navbar-content" id="first-link">
+            <a href="#welcome-section">ABOUT</a>
+        </div>
+        <div class="navbar-content" id="second-link">
+                <a href="#projectsAnchor">WORK</a>
+        </div>
+        <div class="navbar-content" id="third-link">
+            <a href="#contactAnchor">CONTACT</a>
+        </div>                
+    </nav>
+<!-- WELCOME SECTION -->
+    <section id="welcome-section"> 
+                 
+        <div><h1>Greetings Citizen,</h1><p id="welcome-second-line">I am DeHuff</p><p id="welcome-third-line"><em>a web developer</em></p></div>
+    </section>
+
+<!-- SELF:
+    2. Notice the on hover effects both under the individual projects as well as the "show all >" button
+ -->
+ <!-- PROJECT SECTION -->
+    <div class="anchor" id="projectsAnchor"></div>
+    <section id="projects" >
+        
+        <span id="project-header">
+            <div id="star-container-left">
+                <i class="fas fa-star" id="fa-left-star1"></i>
+                <i class="fas fa-star" id="fa-left-star2"></i>
+                <i class="fas fa-star" id="fa-left-star3"></i>
+                <i class="fas fa-star" id="fa-left-star4"></i>
+            </div>  
+            <h2>       
+            <span id="rainbow1">These</span>
+            <span id="rainbow2">Are</span>
+            <span id="rainbow3">Some</span>
+            <span id="rainbow4">of</span>
+            <span id="rainbow5">My</span>
+            <span id="rainbow6">Projects</span>
+            </h2>      
+            <div id="star-container-right">     
+                <i class="fas fa-star" id="fa-right-star1"></i>
+                <i class="fas fa-star" id="fa-right-star2"></i>
+                <i class="fas fa-star" id="fa-right-star3"></i>
+                <i class="fas fa-star" id="fa-right-star4"></i>
+            </div>          
+        </span>
+        <hr>      
+        <div id="project-grid">
+            <div class="project-tile">
+                <div>
+                    <a href="https://codepen.io/KamiFightingSpirit/pen/jOOYywN">
+                        <img class="project-image" src ="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg">
+                    </a>                
+                    <p><span class="ani-text"> <</span>Tribute Page<span class="ani-text">/><span class="ani-text2"> ></span><span class="ani-text3"> ></span></p>
+                </div>
+            </div>
+            <div class="project-tile">
+                    <div>
+                        <a href="https://codepen.io/KamiFightingSpirit/pen/jOOYywN">
+                            <img class="project-image" src ="https://i.imgur.com/zBVotYl.png">
+                        </a>                    
+                        <p><span class="ani-text"> <</span>Product Page<span class="ani-text">/><span class="ani-text2"> ></span><span class="ani-text3"> ></span></p>
+                    </div>
+            </div>
+            <div class="project-tile">
+                    <div>
+                        <a href="https://codepen.io/KamiFightingSpirit/pen/jOOYywN">
+                            <img class="project-image" src ="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg">
+                        </a>                    
+                        <p><span class="ani-text"> <</span>Example Project<span class="ani-text">/><span class="ani-text2"> ></span><span class="ani-text3"> ></span></p>
+                    </div>
+            </div>
+            <div class="project-tile">
+                    <div>
+                        <a href="https://codepen.io/KamiFightingSpirit/pen/jOOYywN">
+                            <img class="project-image" src ="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg">
+                        </a>                    
+                        <p><span class="ani-text"> <</span>Example Project<span class="ani-text">/><span class="ani-text2"> ></span><span class="ani-text3"> ></span></p>
+                    </div>
+            </div>
+            <div class="project-tile">
+                    <div>
+                        <a href="https://codepen.io/KamiFightingSpirit/pen/jOOYywN">
+                            <img class="project-image" src ="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg">
+                        </a>                    
+                        <p><span class="ani-text"> <</span>Example Project<span class="ani-text">/><span class="ani-text2"> ></span><span class="ani-text3"> ></span></p>
+                    </div>
+            </div>
+            <div class="project-tile">
+                    <div>
+                        <a href="https://codepen.io/KamiFightingSpirit/pen/jOOYywN">
+                            <img class="project-image" src ="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/tribute.jpg">
+                        </a>                    
+                        <p><span class="ani-text"> <</span>Example Project<span class="ani-text">/><span class="ani-text2"> ></span><span class="ani-text3"> ></span></p>
+                    </div>
+            </div>
+        </div>
+
+        <div id="footer">
+           <a id="profile-link" href="https://github.com/KamiFightingSpirit" target="_blank"><p><span class="ani-text"> &nbsp;&nbsp;<</span>EXPLORE ALL<span class="ani-text">/><span class="ani-text2"> ></span><span class="ani-text3"> ></span></p></a>
+        </div>
+    </section>
+
+<!-- CONTACT -->
+    <div class="anchor" id="contactAnchor"></div>
+    <section id="contact">            
+                <h2>Let's work together...</h2>
+            <div id="contact-group">
+                <div class="contact-type" id="contact-type-linkedin"><i class="fab fa-linkedin contact-icon"></i><a href="www.linkedin.com/in/andrew-dehuff" target="_blank">LinkedIn</a></div>
+                <div class="contact-type" id="contact-type-github"><i class="fab fa-github contact-icon"></i><a href="https://github.com/KamiFightingSpirit" target="_blank">GitHub</a></div>
+                <div class="contact-type" id="contact-type-email"><i class="fas fa-at contact-icon"></i><a href="mailto:ad3kc@virginia.edu">Email</a></div>
+                <div class="contact-type" id="contact-type-call"><i class="fas fa-mobile-alt contact-icon"></i><a href="tel:619-867-2998">Call Me</a></div>
+            </div>
+    </section>
+
+
+
+  
+
+<!-- 
+    <div id="zoediv">
+        <img id="zoecyberpop" src="http://www.lol-wallpapers.com/wp-content/uploads/2018/05/Cyberpop-Zoe-Splash-Art-HD-4k-Wallpaper-Background-Official-Art-Artwork-League-of-Legends-lol.jpg">
+    </div>    -->
+</body>
+</html>
