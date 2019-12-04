@@ -1,0 +1,91 @@
+
+/* FULL PAGE */
+        html {
+			box-sizing: border-box;      
+			}
+		*, *:before, *:after {
+			box-sizing: inherit;
+			}
+		body{
+			font-family: 'Poppins', sans-serif; 
+            margin:0;
+            padding:0;
+		}
+        #container-main{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 320px 1fr;    
+            grid-template-rows: 250px 1fr;    
+            grid-template-areas:
+                "header header"
+                "content content";                  
+        }
+        li{
+            padding-bottom: 1em;
+        }
+/* NAVBAR */
+        /* MOBILE OR TABLET */
+        /* not setting up mobile first because I'm lazy =P */
+        @media only screen and (max-width: 768px) {
+            #navbar{    
+                grid-area: header;
+                width: 100%;
+                height: 250px !important;
+                overflow-y: scroll; 
+                border-bottom: 2px solid gray;
+                background-color: white;                                               
+            }
+            #navbar > header{
+                text-align: center;
+            }
+            #main-doc{
+                grid-area: content;
+                padding-left: 2em; 
+                            
+            }
+        }
+        /* DESKTOP */
+        #navbar{
+            border-right: 2px solid gray;
+            position: fixed; 
+            height: 100%;                              
+        } 
+        #navbar > header{
+            padding-left: 1em;
+        } 
+        #navbar > ul{
+            display: flex;
+            flex-direction: column;          
+            padding: 0;      
+        }
+        #navbar > ul > li{
+            padding: 0;           
+        }
+       .nav-link{
+            text-decoration: none;
+            color: black;
+            padding-left: 2em;
+        }
+        .nav-link:visited{
+            color: black;
+        }
+/* MAIN DOCUMENT */
+        #main-doc{
+            margin: 2em 0em 0em 0.2em; 
+            padding-right: 6em;    
+        }
+        p{
+            padding-left: 1em;
+        }
+        code{
+            white-space: pre;
+            
+        }
+        .code-block{
+            background: #F6F6F6;
+            height: 3.5em;
+            width: 95%;
+            border-radius: 10px;
+            padding-left: 1em;
+            margin-left: 2em;
+        }
